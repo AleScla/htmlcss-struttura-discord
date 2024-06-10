@@ -6,25 +6,88 @@
 /* general */
 
 ul{
-    list-style: none;
+    list-style: none;   
+    align-content:center;
 }
 
 nav ul > li{
     display:inline-block;
 }
 
+nav{
+    width:60%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+}
+
 /* header */
 header{
-    height:100px;
+    min-height:100px;
     width:100%;
+    padding:20px;
 }
 
 .hdr-container{
     width:80%;
     margin: auto;
     display:flex;
-    min-height:50px;
+    height:50px;
+    
 }
+
+.login, .logo{
+    flex-grow:1;
+    height:100%;
+    align-content:center;
+    padding:5px;
+}
+
+.login{
+    text-align:right;
+}
+
+/* main */
+.row{
+    height:500px;
+    width:100%;
+    padding-top:60px;
+}
+
+.box{
+    width:60%;
+    min-height:80%;
+    margin:auto;
+}
+
+.row1{
+    width:100%;
+    min-height:500px;
+}
+
+.box-container{
+    width:80%;
+    height:80%;
+    margin:auto;
+    display:flex;
+    padding:60px;
+
+}
+
+.blue-box, .pink-box{
+    min-height:400px;
+    flex-grow:1;
+
+}
+
+.blue-box{
+    flex-grow:2;
+}
+
+
+
+
+
 
 
 
@@ -42,3 +105,26 @@ header{
 .debug .hdr-container >*{
     border: 1px dashed black;
 }
+
+.debug main >.row{
+    background-color:blue;
+}
+
+.debug main .row > .box{
+    background-color:palevioletred;
+    border:1px dashed black;
+}
+
+.debug main .row1 > .box-container > .blue-box{
+    background-color:turquoise;
+    border:1px dashed black;
+}
+
+.debug main .row1 > .box-container > .pink-box{
+    background-color:pink;
+    border:1px dashed black;
+}
+
+
+
+            
