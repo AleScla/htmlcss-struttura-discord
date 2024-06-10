@@ -91,6 +91,43 @@ header{
 
 }
 
+.pink-box.bottom{
+    flex-grow:2;
+}
+
+.blue-box.bottom{
+    flex-grow:1;
+}
+
+.black{
+    background-color:rgba(0, 0, 0, 0.70);
+}
+
+footer{
+    width:100%;
+    min-height:100px;
+    margin-top:2px;
+    display:flex;
+    align-items:flex-end;
+    justify-content:center;
+}
+
+.footer-container{
+    width:80%;
+    min-height:80px;
+    display:flex;
+    justify-content:space-between; 
+    align-items:center;
+}
+
+.footer-container > *{
+    padding:5px;
+    flex-grow:0;
+}
+
+button:hover{
+    cursor:pointer;
+}
 
 
 
@@ -142,4 +179,14 @@ header{
 .debug main .bigger-row > .greenbox{
     background-color:green;
     border:1px dashed black;
+}
+
+.debug footer > .footer-container{
+    background-color:aqua;
+}
+
+.debug footer > .footer-container *{
+    background-color:pink;
+    border:1px dashed black;
+
 }
