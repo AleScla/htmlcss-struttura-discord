@@ -3,3 +3,42 @@
     margin:0;
     box-sizing:border-box;
 }
+/* general */
+
+ul{
+    list-style: none;
+}
+
+nav ul > li{
+    display:inline-block;
+}
+
+/* header */
+header{
+    height:100px;
+    width:100%;
+}
+
+.hdr-container{
+    width:80%;
+    margin: auto;
+    display:flex;
+    min-height:50px;
+}
+
+
+
+
+/* debug */
+.debug header {
+    background-color:aqua;
+}
+
+.debug header > .hdr-container{
+    background-color:orange;
+
+}
+
+.debug .hdr-container >*{
+    border: 1px dashed black;
+}
